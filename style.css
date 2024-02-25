@@ -100,7 +100,6 @@ header .content{
         width:0ch;
     }
 }
-
 .images{
     width: 45%;
     height: 70%;
@@ -182,4 +181,100 @@ section#page1{
     font-size: 22px;
     font-weight: 500;
     color: rgb(185, 180, 180);
+}
+
+/* -----------------------------------------------------------Page 3 skills ----------------------------------------------- */
+
+section#page3.skill{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: rgb(79, 79, 233);
+}
+
+.skill-card-container{
+    position: relative;
+    max-width: 500px;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 15px;
+    padding: 10px 20px;
+}
+.skill-card-container .skill-card{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-card .skill-title{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+}
+.skill-card .skill-bar{
+    width: 100%;
+    height: 10px;
+    margin-top: 6px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skill-card .skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(79, 79, 223);
+    opacity: 0;
+    animation: progress 0.4s ease-in-out forwards;
+}
+.skill-per.html{
+    width: 90%;
+}
+.skill-per.css{
+    width: 80%;
+}
+.skill-per.sql{
+    width: 70%;
+}
+.skill-per.Python{
+    width: 70%;
+}
+.skill-per.Django{
+    width: 80%;
+}
+.skill-per.r-programming{
+    width: 30%;
+}
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tip{
+    position: absolute;
+    right: -14px;
+    top: -30px;
+    background: rgb(79, 79, 223);
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    padding: 4px 4px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.skill-per .tip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    background: rgb(79, 79, 223);
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
 }
