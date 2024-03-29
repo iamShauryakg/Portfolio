@@ -87,14 +87,14 @@ header .content{
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid rgb(56,233, 174);
-    animation: typing 5s steps(15) infinite;
+    animation: typing 4s steps(50) infinite;
 }
 @keyframes typing{
     0%{
         width: 0ch;
     }
     50%{
-        width:12ch;
+        width:17ch;
     }
     100%{
         width:0ch;
@@ -186,7 +186,7 @@ section#page1{
 /* -----------------------------------------------------------Page 3 skills ----------------------------------------------- */
 
 section#page3.skill{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -243,6 +243,9 @@ section#page3.skill{
 .skill-per.Django{
     width: 80%;
 }
+.skill-per.Javacript{
+    width: 80%;
+}
 .skill-per.r-programming{
     width: 30%;
 }
@@ -251,6 +254,18 @@ section#page3.skill{
         width: 0;
         opacity: 1;
     }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-card:hover .skill-per{
+    animation: progress1 0.4s ease-in-out forwards;
+}
+@keyframes progress1 {
+    10%{
+        width: 0;
+        opacity: 1;
+    }    
     100%{
         opacity: 1;
     }
