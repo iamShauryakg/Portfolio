@@ -1,6 +1,6 @@
-import Navbar from "../Components/Navbar"
+import Header_part from "../Components/Header_part" 
 import About_me from "../Components/About_me"
-import Skills from "../Components/skills"
+import Skills from "../Components/Skills"
  
 
 
@@ -8,15 +8,16 @@ function Home_page() {
     return (
 
         <>
-        <header>
-            <Navbar />
-        </header>
+            <header id="home" className=" ">
+                <Header_part />
+            </header>
+    
         <div>
             <About_me />
         </div>
-        <div>
+        {/* <div>
             <Skills />
-        </div>
+        </div> */}
         </>
     )
     

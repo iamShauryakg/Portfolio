@@ -1,6 +1,4 @@
 import { useEffect } from 'react';
-import profile3 from '../assets/profile3.jpg'
-import aboutback from '../assets/aboutme.jpg'
 
 function About_Me() {
     useEffect(() => {
@@ -8,39 +6,99 @@ function About_Me() {
     }) 
 
   return (
-    <section id="about" className="h-screen w-[100%] bg-[#222d33]" >
-        <div className="bg-no-repeat bg-center bg-cover overflow-hidden h-screen"
-        style={{ backgroundImage: `url(${aboutback})` }}
-        >
-            <div className="relative flex h-[100%] w-full items-center flex-col ">
-                <div className="title w-auto py-[30px] text-[40px] font-medium text-[rgb(204,113,113)] relative">
-                    <h2>About Me</h2>
-                    <span className="absolute left-0 bottom-0 h-[5px] w-[100%] bg-gradient-to-r from-[rgb(119,55,55)] to-[rgb(64,201,30)]"></span>
-                </div>
-    
-                <div className="absolute flex h-[100vh] w-[100%] justify-around items-center">
-                    <div className="image2">
-                        <img src={profile3} alt="about me image" />
-                    </div>
-                    <div className="relative flex flex-col w-[50%] text-[18px] text-[#beb7b7]">
-                        <div className="aname">I am Shaurya Kumar Gupta</div>
-                        <div className="ajob">  Software engineer </div>
-                        <br/>
-                        <div className="bg-black/50  ">
-                            I am Computer engineering student. <br/>
-                            i am very passionate and hardworking computer engineering student <br/>
-                            lokking forward to became a skilled Software Engineer and serve my excelence to the company. <br/>
-                            I am euthusiatic person and love to learn new things. <br/>
-                            The field of technology always amazes me that's why i choose the field of computer engineering to follow my passion.
-                            <br/>
-                            <br/>
-                            Email : iamshauryakgupta@gmail.com <br/>
-                            Contact No: 9528205752
-                            Birth Place: Hasanpur, Uttar Pradesh - 244241
+    <section id="about" >
+        <div className="mt-8 w-full my-auto p-4 md:p-8 lg:p-16">
+          <div className="flex flex-col sm:w-[75%] mx-auto  justify-center">
+              <div className="text-left  ">
+                    <h2 className="text-4xl text-center font-bold text-blue-700">About Me</h2>
+                      <p className='mt-5 text-lg'>
+                          Passionate engineering student with a keen interest in crafting visually appealing and highly
+                          functional websites. With a solid foundation in HTML, CSS, Bootstrap, and React, I strive to
+                          create seamless user experiences and bring innovative ideas to life.
+                      </p>
+                      <div className="text-center text-lg-start mt-4"><button className="downloadResume">Download Resume</button>
+                      </div>
+
+              </div>
+
+              <div className="flex flex-col items-center gap-3 justify-center md:flex-row md:justify-between mt-10" id="EduandExp">
+
+                  <div className="border-4 rounded-2xl p-5 w-[350px] sm:w-[500px]  sm:h-[550px] hover:scale-105 transition-all duration-300 ">
+                      <h3 className="text-3xl text-blue-700 font-semibold">Education</h3>
+                      <div className="mt-4 px-4">
+                          <h6>• <span className='underline text-[15px] md:text-[20px]'>Master of Computer Applications (MCA) </span> </h6>
+                          <div className=" items-center ml-5 text-[14px] md:text-[16px]">
+                            <h6>IFTM University <span className='text-[12px] pt-[-5px] ml-2'>2023 - 2025</span></h6>
+                            
+                                <p>
+                                Grade : 8.68 CGPA <br/>
+                                </p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                      </div>
+
+                      <div className="mt-4 px-4">
+                          <h6>• <span className='underline text-[15px] md:text-[20px]'>Bachelor of Computer Applications (BCA) </span> </h6>
+                          <div className=" items-center ml-5 text-[14px] md:text-[16px]">
+                            <h6>IFTM University <span className='text-[12px] pt-[-5px] ml-2'>2020 - 2023</span></h6>
+                            
+                            <p>
+                            Grade : 8.92 CGPA <br/>
+                            </p>
+                        </div>
+                          
+                      </div>
+                      <div className="mt-4 px-4">
+                          <h6>• <span className='underline text-[15px] md:text-[20px]'>Intermediate </span> </h6>
+                          <div className=" items-center ml-5 text-[14px] md:text-[16px]">
+                            <h6>H.S.S. Public School <span className='text-[12px] pt-[-5px] ml-2'>2019 - 2020</span></h6>
+                            
+                            <p>
+                            Grade : 78%<br/>
+                            </p>
+                        </div>
+                          
+                      </div>
+                      <div className="mt-4 px-4">
+                          <h6>• <span className='underline text-[15px] md:text-[20px]'>High School </span> </h6>
+                          <div className=" items-center ml-5 text-[14px] md:text-[16px]">
+                            <h6>H.S.S. Public School <span className='text-[12px] pt-[-5px] ml-2'>2017 - 2018</span></h6>
+                            
+                            <p>
+                            Grade : 58%<br/>
+                            </p>
+                        </div>
+                          
+                      </div>
+                  </div>
+
+                  <div className="border-4 rounded-2xl p-5 w-[350px] sm:w-[500px] sm:h-[550px] hover:scale-105 transition-all duration-300 ">
+                      <h3 className="text-3xl text-blue-700 font-semibold">Experience</h3>
+                      <div className="expe mt-4 px-4">
+                          <h6><span>•</span> Django Intern</h6>
+                          <div className="d-flex align-items-center mt-3">
+
+                              <div className="ms-2 date">Jun 2025 - Sep 2025</div>
+                          </div>
+                          <div className="mt-4">
+                              <h6>The Enterprenuere Network</h6>
+                              <p>
+                                  During my internship at "The Enterprenuere Network" as a Django intern, I Deployed 3+ projects successfullly and gained hands-on experience with git/Github and deployments tools,
+                             </p>
+                             <br />
+                             <p>
+                                I developed backend features with Django and REST APIs, and integrated them with React.js frontends to create dynamic web applications.
+                             </p>
+                             <br />
+                             <p>
+                                I also worked as acting project leader, managing task distribution, code reviews, and ensuring timely delivery.
+                             </p>
+                              <div id="skillsss"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
         </div>
     </section>
   )

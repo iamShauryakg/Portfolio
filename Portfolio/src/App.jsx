@@ -1,9 +1,9 @@
 
 import { useState } from 'react'
 import './App.css'
-import Home_page from './pages/Home'
+import Home_page from './Pages/Home'
 
-import { LoadingScreen } from './components/LoadingScreen'
+import { LoadingScreen } from './Components/LoadingScreen'
 
 function App() {
 

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 
-const TypingText = ({ words = ["Hello", "World"], speed = 100, deleteSpeed = 50, pause = 1000 }) => { 
+const TypingText = ({ words = [], speed = 100, deleteSpeed = 50, pause = 1000 }) => { 
   const [displayed, setDisplayed] = useState(""); 
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
