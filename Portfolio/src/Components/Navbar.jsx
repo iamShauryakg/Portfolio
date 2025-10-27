@@ -20,7 +20,7 @@ function Navbar() {
   
   return (
 
-           <nav className=' lg:fixed  px-0 flex bg-[rgba(0,0,0,0.333)] h-40 sm:h-25 w-full z-[99]' >
+           <nav className=' hidden sm:block lg:fixed  px-0 flex bg-[rgba(0,0,0,0.333)] h-40 sm:h-25 w-full z-[99]' >
             <div className="w-[90%] flex justify-between items-center ">
                 <div className="hidden sm:block">
                     <img src={logo_shaurya} alt="logo" className='w-[200px] h-auto' />

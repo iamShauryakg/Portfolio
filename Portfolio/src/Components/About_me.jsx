@@ -4,26 +4,28 @@ function About_Me() {
     useEffect(() => {
         document.title = "Portfolio"
     }) 
+    
 
   return (
     <section id="about" >
+      
         <div className="mt-8 w-full my-auto p-4 md:p-8 lg:p-16">
           <div className="flex flex-col sm:w-[75%] mx-auto  justify-center">
               <div className="text-left  ">
-                    <h2 className="text-4xl text-center font-bold text-blue-700">About Me</h2>
-                      <p className='mt-5 text-lg'>
-                          Passionate engineering student with a keen interest in crafting visually appealing and highly
-                          functional websites. With a solid foundation in HTML, CSS, Bootstrap, and React, I strive to
+                    <h2 className="sm:eff text-4xl text-center font-bold text-blue-700">About Me</h2>
+                      <p className='sm:eff mt-5 text-center text-lg'>
+                          Full Stack Web Developer  with a keen interest in crafting visually appealing and highly
+                          functional websites. With a solid foundation in HTML, CSS, Bootstrap, Tailwindcss, React, Python, and Django, I strive to
                           create seamless user experiences and bring innovative ideas to life.
                       </p>
-                      <div className="text-center text-lg-start mt-4"><button className="downloadResume">Download Resume</button>
+                      <div className="text-center text-lg-start mt-4"><button className="bg-blue-700 rounded border-4 border-white  p-3 cursor-pointer hover:border-blue-700  hover:bg-white hover:text-blue-700 sm:eff transition-all duration-300">Download Resume</button>
                       </div>
 
               </div>
 
               <div className="flex flex-col items-center gap-3 justify-center md:flex-row md:justify-between mt-10" id="EduandExp">
 
-                  <div className="border-4 rounded-2xl p-5 w-[350px] sm:w-[500px]  sm:h-[550px] hover:scale-105 transition-all duration-300 ">
+                  <div className="sm:eff border-4 rounded-2xl p-5 w-[350px] sm:w-[500px]  sm:h-[500px] hover:scale-105 transition-all duration-300 ">
                       <h3 className="text-3xl text-blue-700 font-semibold">Education</h3>
                       <div className="mt-4 px-4">
                           <h6>• <span className='underline text-[15px] md:text-[20px]'>Master of Computer Applications (MCA) </span> </h6>
@@ -71,7 +73,7 @@ function About_Me() {
                       </div>
                   </div>
 
-                  <div className="border-4 rounded-2xl p-5 w-[350px] sm:w-[500px] sm:h-[550px] hover:scale-105 transition-all duration-300 ">
+                  <div className="sm:eff border-4 rounded-2xl p-5 w-[350px] sm:w-[500px] sm:h-[500px] hover:scale-105 transition-all duration-300 ">
                       <h3 className="text-3xl text-blue-700 font-semibold">Experience</h3>
                       <div className="expe mt-4 px-4">
                           <h6><span>•</span> Django Intern</h6>

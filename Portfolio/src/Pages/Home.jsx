@@ -15,9 +15,9 @@ function Home_page() {
         <div>
             <About_me />
         </div>
-        {/* <div>
+        <div>
             <Skills />
-        </div> */}
+        </div>
         </>
     )
     

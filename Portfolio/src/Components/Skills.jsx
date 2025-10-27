@@ -2,14 +2,29 @@
 
 function Skills() {
     return (
-        <section id="skills" className="skill flex flex-col">
-               <div className="skill-main-title title w-auto   text-[40px] font-medium text-[rgb(226,223,223)] relative">
-                    <h2 >Skills</h2>
-                    <span className="absolute left-0 bottom-0 h-[5px] w-[100%] bg-gradient-to-r from-[rgb(177,162,162)] to-[rgb(145,159,142)] "></span>
+        <section className=" flex flex-col">
+               <div className=" justify-center items-center w-[100px] m-auto text-[40px] font-medium text-[rgb(226,223,223)] relative">
+                    <h2 className="text-center" >Skills</h2>
+                    <span className="absolute left-0 bottom-0 h-[5px] w-[100%] bg-gradient-to-r from-[rgb(7,7,119)] to-[rgb(145,159,142)] "></span>
                 </div>
 
+                <div className="flex flex-col bg-gray-600 justify-center w-[300px] items-center mt-8 mb-8  p-4">
+                    <div className="  mb-2">
+                        <h2 className="text-center text-[22px]">Frontend Development</h2>
+                    </div>
+                    <span className="w-full bg-white h-0.5"></span>
+                    <div className=''>
+                        <ul className="flex flex-col gap-2 mt-4 max-w-[400px] m-auto text-[18px] ">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div className="flex items-center mt-[24px] w-max-[60%] justify-center ">
+            {/* <div className="flex items-center mt-[24px] w-max-[60%] justify-center ">
             <div className="skill-card-container">
                 <div className="skill-card">
                     <span className="skill-title">Python</span>
@@ -35,8 +50,7 @@ function Skills() {
                     <span className="skill-title">Javascript</span>
 
                     <div className="skill-bar">
-                        {/* Incorrect class used below, fixed in next line */}
-                        {/* <span className="skill-per r-programming"> */}
+            
                         <span className="skill-per Javacript">
                             <span className="tip">40% </span>
                         </span>
@@ -136,7 +150,7 @@ function Skills() {
                     </div>
                 </div>
             </div>
-            </div>
+            </div> */}
         </section>
     )
 }
