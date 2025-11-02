@@ -1,6 +1,6 @@
 import Header_part from "../Components/Header_part" 
 import About_me from "../Components/About_me"
-import Skills from "../Components/Skills"
+import Skills from "../Components/Skills/Skills"
  
 
 

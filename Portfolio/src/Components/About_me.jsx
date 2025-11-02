@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Resume from '../assets/Resume.pdf'
 
 function About_Me() {
     useEffect(() => {
@@ -18,7 +19,12 @@ function About_Me() {
                           functional websites. With a solid foundation in HTML, CSS, Bootstrap, Tailwindcss, React, Python, and Django, I strive to
                           create seamless user experiences and bring innovative ideas to life.
                       </p>
-                      <div className="text-center text-lg-start mt-4"><button className="bg-blue-700 rounded border-4 border-white  p-3 cursor-pointer hover:border-blue-700  hover:bg-white hover:text-blue-700 sm:eff transition-all duration-300">Download Resume</button>
+                      <div className="text-center text-lg-start mt-4"><button className="bg-blue-700 rounded border-4 border-white  p-3 cursor-pointer hover:border-blue-700  hover:bg-white hover:text-blue-700 sm:eff transition-all duration-300">
+                        <a href={Resume} download="Resume">
+                        Download Resume
+                        </a>
+                      
+                      </button>
                       </div>
 
               </div>
