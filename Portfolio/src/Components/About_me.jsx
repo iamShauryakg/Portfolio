@@ -1,11 +1,7 @@
-import { useEffect } from 'react';
+
 import Resume from '../assets/Resume.pdf'
 
 function About_Me() {
-    useEffect(() => {
-        document.title = "Portfolio"
-    }) 
-    
 
   return (
     <section id="about" >
@@ -29,9 +25,9 @@ function About_Me() {
 
               </div>
 
-              <div className="flex flex-col items-center gap-3 justify-center md:flex-row md:justify-between mt-10" id="EduandExp">
+              <div className="flex flex-col w-full items-center gap-6 md:mx-0  lg:flex-row sm:justify-between mt-10" >
 
-                  <div className="sm:eff border-4 rounded-2xl p-5 w-[350px] sm:w-[500px]  sm:h-[500px] hover:scale-105 transition-all duration-300 ">
+                  <div className="sm:eff border-4 rounded-2xl p-5 w-[350px] sm:w-[500px] sm:h-[500px] hover:scale-105 transition-all duration-300 ">
                       <h3 className="text-3xl text-blue-700 font-semibold">Education</h3>
                       <div className="mt-4 px-4">
                           <h6>• <span className='underline text-[15px] md:text-[20px]'>Master of Computer Applications (MCA) </span> </h6>

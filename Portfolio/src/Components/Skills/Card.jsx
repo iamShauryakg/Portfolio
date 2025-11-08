@@ -4,7 +4,7 @@ const SkillsCard = ({ heading, skills }) => {
     return  (
         <>
 
-            <div className=" w-[300px] h-auto bg-[rgb(24,24,24)] text-white m-4 border-3 border-white p-4 rounded-lg shadow-lg ">
+            <div className=" w-[300px] h-auto bg-[rgb(24,24,24,0.5)]  text-white m-4 border-3 border-white p-4 rounded-lg shadow-lg after::blur-sm hover:scale-105 transition-transform duration-300 ">
                 <div className=" mb-2">
                     <h2 className="text-center md:text-[22px] text-blue-700 font-bold">{heading} </h2>
                 </div>

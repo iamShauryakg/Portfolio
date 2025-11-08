@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import  logo_shaurya from '../assets/logo-shaurya.png'
 
 
-
 function Navbar() {
 
 
@@ -10,7 +9,7 @@ function Navbar() {
     { name: "Home", href: "#" },
     { name: "About", href: "#about" },
     { name: "Skill", href: "#skills" },
-    { name: "Projects", href: "#" },
+    { name: "Projects", href: "#projects" },
     { name: "Achivements", href: "#" },
     { name: "Resume", href: "#" },
     { name: "Contact Me", href: "#" },

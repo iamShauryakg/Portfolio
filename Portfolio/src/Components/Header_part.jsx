@@ -1,5 +1,4 @@
 
-import { useEffect } from 'react';
 import background from '../assets/background.png';
 import  profile2 from '../assets/profile2.jpg'
 import Navbar from './Navbar';
@@ -9,9 +8,7 @@ import TypingText from './Typing_texteff';
 
 
 const Header_part = () => {
-    useEffect(() => {
-    document.title = "Portfolio"
-  });
+
 
 
   return (
