@@ -1,5 +1,5 @@
 import Project_card from "./Project_card";
-import { motion } from "framer-motion";
+import file_tranfer_img from '../../assets/file_transfer.jpg'
 
 const Projects = () => {
     const data = [
@@ -8,6 +8,12 @@ const Projects = () => {
             description: "A personal portfolio website to showcase my projects and skills.",
             img: "https://www.pixelstalk.net/wp-content/uploads/2016/07/3840x2160-Images-Free-Download.jpg",
             link: '#'
+        },
+        {
+            title: "File transfer app",
+            description: "A web application where user can upload the file and share genereated link with other to download it.",
+            img: `${file_tranfer_img}`,
+            link: "https://file-transfer-eta.vercel.app/"
         },
         {
             title: "e-commerce platform",
@@ -26,7 +32,7 @@ const Projects = () => {
             description: "A dashboard to visualize complex datas average through interactive charts and graphs.",
             img: "https://th.bing.com/th/id/OIP.jj-chsA9PZgl-DNBoVh0ngHaEw?w=267&h=180&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.1&pid=1.7&rm=3",
             link: "#"
-        }
+        },
 
     ]
 
