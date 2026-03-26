@@ -1,5 +1,6 @@
 import Project_card from "./Project_card";
 import file_tranfer_img from '../../assets/file_transfer.jpg'
+import rtiImg from '../../assets/rti website.png'
 
 const Projects = () => {
     const data = [
@@ -22,10 +23,10 @@ const Projects = () => {
             link: "#"
         },
         {
-            title: "blog website",
-            description: "A bloggin platform where user can read and write articles on various topics.",
-            img: "https://th.bing.com/th/id/OIP.UQmdUO1qDG-k508SYNsCSwHaED?w=290&h=180&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.1&pid=1.7&rm=3",
-            link: "#"
+            title: "Rti website",
+            description: "A ngo website where user can fill the form to submit his/her application and also can donate money to the ngo.",
+            img: rtiImg,
+            link: "https://rtiassociation.vercel.app/"
         },
         {
             title: "data visualization dashboard",
